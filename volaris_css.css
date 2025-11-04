@@ -690,3 +690,89 @@ body {
         flex-direction: column;
     }
 }
+/* ===== Pago seguro (contenedor) ===== */
+.payment-secure-section{
+  background:#fff;
+  padding:40px 0;
+}
+.payment-secure-container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:0 16px;
+  text-align:center;
+}
+
+/* Título */
+.payment-secure-title{
+  font-size:24px;
+  font-weight:700;
+  color:#333;
+  margin-bottom:18px;
+}
+
+/* Línea con dos textos (izquierda / derecha) */
+.left-text,
+.right-text{
+  display:inline-block;
+  width:49%;
+  font-size:16px;
+  color:#555;
+  line-height:1.4;
+  vertical-align:middle;
+}
+.left-text{ text-align:left; }
+.right-text{ text-align:right; }
+
+/* Logos */
+.payment-methods,
+.payment-stores{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:16px;
+  margin-top:16px;
+}
+.payment-methods img,
+.payment-stores img{
+  height:60px;
+  width:auto;
+  max-width:150px;
+  object-fit:contain;
+  margin:0 6px;
+  filter:none;
+  opacity:1;
+  transition:transform .2s ease;
+}
+.payment-methods img:hover,
+.payment-stores img:hover{
+  transform:scale(1.02);
+}
+
+
+
+@media (max-width:768px){
+  .left-text,
+  .right-text{
+    display:block;
+    width:100%;
+    text-align:center;
+  }
+}
+@media (max-width:480px){
+  .payment-methods img,
+  .payment-stores img{ height:24px; }
+  .payment-secure-title{ font-size:22px; }
+}
+.payment-methods{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:16px;
+}
+
+.effective-payment{
+  text-align:center;
+  margin-top:18px;
+  font-size:15px;
+  color:#666;
+}
